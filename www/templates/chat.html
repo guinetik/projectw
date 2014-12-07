@@ -1,0 +1,50 @@
+<ion-view title="">
+    <ion-nav-buttons side="left">
+        <div>
+            <a class="button button-balanced button-icon icon ion-ios7-arrow-back"
+               ng-click="goBack()"></a> <a class="button"
+                                           href="#/app/profile"> <img class="button-icon"
+                                                                      style="position: absolute;left: -4px;top: 2px;max-height: 28px;border-radius: 4px"
+                                                                      src="http://ionicframework.com/img/docs/venkman.jpg">
+            <span style="margin-left: 30px">fwef</span> </a>
+        </div>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-paperclip"
+           href="#/app/contacts"></a>
+        <a class="button button-icon icon ion-more"></a>
+    </ion-nav-buttons>
+    <ion-content padding="true"
+                 class="has-header stable-bg has-footer"
+                 style="bottom: 90px"
+                 start-y="120">
+        <ol class="messages" style="padding-bottom: 20px">
+            <li ng-repeat="message in messages"
+                class="{{message.sent ? 'sent' : 'received'}}"
+                ng-bind-html="message.content | emoji"></li>
+        </ol>
+    </ion-content>
+    <ion-footer-bar class="bar-light"
+                    style="line-height: 20px;font-size: 20px;height: 90px;padding: 0">
+        <div class="item-input-wrapper button-clear" style="width: 100%;height: 45px">
+            <textarea type="text"
+                      ng-model="msg"
+                      id="txt_msg"
+                      placeholder="Type your message"
+                      ng-enter="add()"></textarea> <i class="button button-icon button-small icon ion-android-send"
+                                                      ng-click="add()"
+                                                      style="color: #c0c0c0"></i>
+        </div>
+        <div class="tabs tabs-icon-only" style="left: 0;line-height: 45px;font-size: 45px;height: 45px">
+            <a class="tab-item">
+                <i class="icon ion-chatbubbles"></i>
+            </a>
+            <a class="tab-item" ng-click="openEmoji()">
+                <i class="icon icon-happy icon-ext-happy"></i>
+            </a>
+            <a class="tab-item">
+                <i class="icon ion-mic-a"></i>
+            </a>
+        </div>
+    </ion-footer-bar>
+</ion-view>

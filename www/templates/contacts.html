@@ -1,0 +1,113 @@
+<ion-view title="Contacts">
+    <ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-ios7-search-strong"
+           ng-click="toggleSearch()"></a>
+        <button menu-toggle="right"
+                class="button button-icon icon ion-navicon-round"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header has-footer">
+        <div class="bar bar-header item-input-inset"
+             ng-show="showSearch">
+            <label class="item-input-wrapper"> <i class="icon ion-ios7-search placeholder-icon"></i> <input type="search"
+                                                                                                            ng-model="searchText"
+                                                                                                            placeholder="Search"> </label>
+            <button class="button button-clear"
+                    ng-click="toggleSearch()">
+                Cancel
+            </button>
+        </div>
+        <div class="list">
+            <a class="item item-avatar"
+               href="#"> <img src="http://ionicframework.com/img/docs/venkman.jpg">
+
+                <h2>Antonio</h2>
+
+                <p>Back off, man. I'm a scientist.</p>
+            </a> <a class="item item-avatar"
+                    href="#"> <img src="http://ionicframework.com/img/docs/spengler.jpg">
+
+            <h2>Egon</h2>
+
+            <p>We're gonna go full stream.</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/stantz.jpg">
+
+            <h2>Ray</h2>
+
+            <p>Ugly little spud, isn't he?</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/winston.jpg">
+
+            <h2>Winston</h2>
+
+            <p>That's a big Twinkie.</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/tully.jpg">
+
+            <h2>Tully</h2>
+
+            <p>Okay, who brought the dog?</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/barrett.jpg">
+
+            <h2>Dana</h2>
+
+            <p>I am The Gatekeeper!</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/slimer.jpg">
+
+            <h2>Slimer</h2>
+
+            <p>Boo!</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/venkman.jpg">
+
+            <h2>Venkman</h2>
+
+            <p>Back off, man. I'm a scientist.</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/spengler.jpg">
+
+            <h2>Egon</h2>
+
+            <p>We're gonna go full stream.</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/stantz.jpg">
+
+            <h2>Ray</h2>
+
+            <p>Ugly little spud, isn't he?</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/winston.jpg">
+
+            <h2>Winston</h2>
+
+            <p>That's a big Twinkie.</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/tully.jpg">
+
+            <h2>Tully</h2>
+
+            <p>Okay, who brought the dog?</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/barrett.jpg">
+
+            <h2>Dana</h2>
+
+            <p>I am The Gatekeeper!</p>
+        </a> <a class="item item-avatar"
+                href="#"> <img src="http://ionicframework.com/img/docs/slimer.jpg">
+
+            <h2>Slimer</h2>
+
+            <p>Boo!</p>
+        </a>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-stable">
+        <button class="button button-outline button-positive pull-right"
+                ng-click="showAddUserPopup()">
+            <i class="icon ion-person-add"></i>Add Contact
+        </button>
+    </div>
+</ion-view>

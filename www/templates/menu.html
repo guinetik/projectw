@@ -1,0 +1,37 @@
+<ion-side-menus>
+    <ion-pane ion-side-menu-content
+              drag-content="false">
+        <ion-nav-bar class="bar-balanced"
+                     align-title="left"></ion-nav-bar>
+        <ion-nav-view name="menuContent"
+                      animation="slide-right-left"></ion-nav-view>
+    </ion-pane>
+    <ion-side-menu side="right"
+                   is-enabled="{{location.path() != 'app/login'}}"
+                   width="240">
+        <header class="bar bar-header bar-stable menu_header">
+            <a class="item item-avatar menu_profile"
+               href="#app/profile"> <img src="http://ionicframework.com/img/docs/venkman.jpg"
+                              class="menu_user_avatar">
+
+                <h3 class="menu_user_name">Venkman fwefoi Kofokfe</h3>
+            </a>
+        </header>
+        <ion-content class="has-header">
+            <ion-list>
+                <ion-item nav-clear
+                          menu-close
+                          href="#/app/chats">Chats
+                </ion-item>
+                <ion-item nav-clear
+                          menu-close
+                          href="#/app/contacts">Contacts
+                </ion-item>
+                <ion-item nav-clear
+                          menu-close
+                          href="#/app/settings">Settings
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

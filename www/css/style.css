@@ -1,0 +1,140 @@
+form input + i.icon.error {
+    display: none;
+    margin-left: 8px;
+}
+
+form.ng-submitted input.ng-invalid + i.icon.error {
+    display: block;
+}
+
+form.ng-submitted input.ng-valid + i.icon.error {
+    display: none;
+}
+
+.messages {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+.messages li {
+    display:block;
+    float:left;
+    clear:both;
+    max-width:65%;
+    margin:0 0 1rem 0;
+    padding:0;
+}
+
+.messages p {
+    border-radius:.75rem;
+    background:#e6e5eb;
+    color:#383641;
+    padding:.6875rem;
+    margin:0;
+    font-size:.875rem;
+}
+
+.messages img {
+    display:block;
+    max-width:65%;
+    border-radius:.75rem;
+}
+
+.messages .sent {
+    float:right;
+}
+
+.messages .sent img {
+    float:right;
+}
+
+.messages .sent p {
+    background:#158ffe;
+    color:#fff;
+}
+
+.menu_user_avatar {
+    top: 0!important;
+    left: 0!important;
+    max-width: 35px!important;
+    max-height: 35px!important;
+}
+
+.menu_profile {
+    padding: 0px;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    min-height: 0px;
+}
+
+.menu_user_name {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    width: 185px;
+}
+
+.menu_header {
+    height: 45px;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../lib/fonts/icomoon.eot?-ifncgp');
+    src:url('../lib/fonts/icomoon.eot?#iefix-ifncgp') format('embedded-opentype'),
+    url('../lib/fonts/icomoon.woff?-ifncgp') format('woff'),
+    url('../lib/fonts/icomoon.ttf?-ifncgp') format('truetype'),
+    url('../lib/fonts/icomoon.svg?-ifncgp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-office:before {
+    content: "\e600";
+}
+.icon-earth:before {
+    content: "\e601";
+}
+.icon-happy:before {
+    content: "\e602";
+}
+.icon-warning:before {
+    content: "\e603";
+}
+
+.icon-ext {
+    font-size: 20px!important;
+    margin-top: 4px!important;
+}
+
+.icon-ext-happy {
+    font-size: 28px!important;
+}
+
+.item-media {
+    min-height: 0;
+    height: 40px;
+}
+
+.item-media img{
+    top:0!important;
+    left:0!important;
+    position: relative!important;
+}

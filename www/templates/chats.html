@@ -1,0 +1,35 @@
+<ion-view title="Chats">
+    <ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-ios7-search-strong"
+           ng-click="toggleSearch()"></a> <a class="button button-icon icon ion-person-stalker"
+                                             href="#/app/contacts"></a>
+        <button menu-toggle="right"
+                class="button button-icon icon ion-navicon-round"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header has-footer">
+        <div class="bar bar-header item-input-inset"
+             ng-show="showSearch">
+            <label class="item-inpeut-wrapper"> <i class="icon ion-ios7-search placeholder-icon"></i> <input
+                    type="search"
+                    ng-model="searchText"
+                    placeholder="Search"> </label>
+            <button class="button button-clear"
+                    ng-click="toggleSearch()">
+                Cancel
+            </button>
+        </div>
+        <div class="list">
+            <a ng-repeat="item in chats  | filter:searchText"
+               href="#/app/chat/{{item.id}}"
+               class="item item-avatar"> <img ng-src="{{'http://ionicframework.com/img/docs/' +  item.user.avatar }}">
+
+                <h2>{{ item.user.name }}</h2>
+
+                <p>{{ item.message }}</p>
+            </a>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-stable">
+        <div class="title">Touch and hold to remove a chat</div>
+    </div>
+</ion-view>

@@ -1,0 +1,31 @@
+<div class="card" style="max-width:360px;height: 200px;position: absolute;bottom: 10px;left: 2px;right: 2px;margin:0 auto" ng-controller="EmojiCtrl">
+    <div class="tabs tabs-icon-only"
+         style="position: relative;top: 0;border-top-width: 0;border-bottom-width: 1px;height: 30px;line-height: 20px">
+        <a class="tab-item">
+            <i class="icon ion-ios7-clock" style="font-size: 24px;margin-top: 2px!important;"></i>
+        </a>
+        <a class="tab-item" ng-click="toggleEmojis()">
+            <i class="icon icon-happy icon-ext"></i>
+        </a>
+        <a class="tab-item" ng-click="toggleEarth()">
+            <i class="icon icon-earth icon-ext"></i>
+        </a>
+        <a class="tab-item" ng-click="toggleTools()">
+            <i class="icon ion-ios7-bell" style="font-size: 24px;margin-top: 2px!important;"></i>
+        </a>
+        <a class="tab-item" ng-click="toggleCity()">
+            <i class="icon icon-office icon-ext"></i>
+        </a>
+        <a class="tab-item" ng-click="toggleSigns()">
+            <i class="icon icon-warning icon-ext"></i>
+        </a>
+        <a class="tab-item stable-bg" ng-click="closeEmoji()">
+            <i class="icon ion-ios7-undo" style="font-size: 24px;margin-top: 2px!important;"></i>
+        </a>
+    </div>
+    <ion-scroll style="position: absolute;top:36px;height: 164px;">
+        <div class="list padding">
+            <a ng-repeat="emj in emojis" ng-click="addEmoji('{{emj}}')"><i class="emoji emoji_{{emj}}"></i></a>
+        </div>
+    </ion-scroll>
+</div>
